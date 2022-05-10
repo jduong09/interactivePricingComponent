@@ -3,13 +3,14 @@ body {
   font-family: 'Manrope', sans-serif;
   font-size: 15px;
   color: hsl(225, 20%, 60%);
+  min-height: 100vh;
+  background-color: hsl(230, 100%, 99%);
 }
 
 main {
   background-image: url('../images/bg-pattern.svg');
   background-size: 100% 50%;
   background-repeat: no-repeat;
-  background-color: hsl(230, 100%, 99%);
   text-align: center;
 }
 
@@ -191,4 +192,68 @@ main {
   font-family: 'Manrope', sans-serif;
   font-size: 15px;
   cursor: pointer;
+  height: min-content;
+}
+
+@media (min-width: 575px) {
+  .header {
+    background-size: 30%;
+  }
+
+  .main-container {
+    padding-bottom: 0;
+  }
+
+  #toggle-container {
+    width: 10%;
+  }
+
+  #toggle {
+    width: 25%;
+  }
+
+  .footer > ul {
+    margin: 1rem 0 1rem 2rem;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+  }
+
+  .footer > #btn-cta {
+    align-self: center;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    background-size: 100% 60%;
+  }
+
+  .header {
+    background-size: 20%;
+  }
+
+  .main-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    background-size: 15%;
+  }
+
+  .main-container {
+    width: 40%;
+  }
 }
