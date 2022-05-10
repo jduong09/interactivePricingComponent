@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="js/bar.js"></script>
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <main>
+    <div class="header">
+      <h1>Simple, traffic-based pricing</h1>
+      <div>Sign-up for our 30-day trial. No credit card required. </div>
+    </div>
+    <div class="main-container">
+      <ul>
+        <li id="pageviews">100K PAGEVIEWS</li>
+        <li>
+          <div class="pricing-bar">
+            <span id="slider-bar"></span>
+            <input class="slider" id="pricing-slider" type="range" min="1" max="100" value="50" />
+          </div>
+        </li>
+        <li><strong id="price">$16.00</strong> /month</li>
+      </ul>
+      <div class="billing-type">
+        <div>Monthly Billing</div>
+        <div id="toggle-container">
+          <span id="toggle"></span>
+        </div>
+        <div>
+          Yearly Billing
+          <span id="discount">-25%</span>
+        </div>
+      </div>
+      <div class="footer">
+        <ul>
+          <li>
+            <img class="icon-check" src="images/icon-check.svg" alt="icon check" />
+            Unlimited websites</li>
+          <li>
+            <img class="icon-check" src="images/icon-check.svg" alt="icon check" />
+            100% data ownership</li>
+          <li>
+            <img class="icon-check" src="images/icon-check.svg" alt="icon check" />
+            Email reports</li>
+        </ul>
+        <button type="button" id="btn-cta">Start my trial</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
